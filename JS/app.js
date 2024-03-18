@@ -19,6 +19,7 @@ let endPlayButtonUser2 = document.getElementById("end-play-button-user-2");
 let selectedButton2 = document.getElementById("selected-button-user-2");
 let userScore2 = document.getElementById("user-2-score");
 
+let playContinueButton = document.getElementById("play-continue-button");
 let score2 = 0;
 let selection2 = null;
 let winnerScore = 0;
@@ -118,6 +119,7 @@ endPlayButtonUser2.addEventListener("click", function () {
   if (score1 > score2) {
     Score.innerText = score1;
     Winner.innerText = "Human";
+    playContinueButton.innerText = "CONTINUE";
   } else if (score1 < score2) {
     Score.innerText = score2;
     Winner.innerText = "Computer";
