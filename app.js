@@ -89,8 +89,9 @@ playButtonUser2.addEventListener("click", function () {
     selectedButton2.style.backgroundPosition = "center";
     selection2 = "scissor";
   }
-
-  if (selection1 == selection2) {
+  if (selection1 == null) {
+    console.log("select an option");
+  } else if (selection1 == selection2) {
     console.log("same");
   } else if (selection1 == "rock" && selection2 == "scissor") {
     score1++;
@@ -133,4 +134,6 @@ reset.addEventListener("click", function () {
   userScore2.innerText = "0";
   Score.innerText = "0";
   Winner.innerText = "-";
+  score1 = 0;
+  score2 = 0;
 });
