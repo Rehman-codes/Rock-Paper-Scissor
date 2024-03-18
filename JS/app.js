@@ -128,12 +128,5 @@ endPlayButtonUser2.addEventListener("click", function () {
 });
 
 reset.addEventListener("click", function () {
-  selectedButton1.style.backgroundImage = "url('/assets/questionMark.png')";
-  selectedButton2.style.backgroundImage = "url('/assets/questionMark.png')";
-  userScore1.innerText = "0";
-  userScore2.innerText = "0";
-  Score.innerText = "0";
-  Winner.innerText = "-";
-  score1 = 0;
-  score2 = 0;
+  window.location.reload();
 });
