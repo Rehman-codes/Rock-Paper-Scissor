@@ -123,9 +123,11 @@ endPlayButtonUser2.addEventListener("click", function () {
   } else if (score1 < score2) {
     Score.innerText = score2;
     Winner.innerText = "Computer";
+    playContinueButton.innerText = "CONTINUE";
   } else {
     Score.innerText = "0";
     Winner.innerText = "None";
+    playContinueButton.innerText = "CONTINUE";
   }
 });
 
