@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" href="/assets/fav.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <title>Rock | Paper | Scissor</title>
+</head>
+
+<body>
+
+
+
+
+
+    <!-- /*****************************************[Result]***********************************************/ -->
+    <section id="result">
+        <!-- ++++++++++++++[Winner]++++++++++++++ -->
+        <div id="winner">
+            <h1>Winner<h2 id="Winner">-</h2>
+            </h1>
+        </div>
+        <!-- ++++++++++++++[Score]++++++++++++++ -->
+
+        <div id="final-score">
+            <h1>Score<h2 id="score">0</h2>
+            </h1>
+        </div>
+    </section>
+    <!-- /*****************************************[UserControls]***********************************************/ -->
+    <section id="user-controls">
+        <!-- /*****************************************[User-1-Controls]***********************************************/ -->
+        <div id="user-1-controls">
+            <div id="selected-option-1" class="selected-option">
+                <button id="selected-button-user-1" class="option-button selected-button"></button>
+                <div id="user-score">
+                    <h1>Score<h2 id="user-1-score">0</h2>
+                    </h1>
+                </div>
+            </div>
+            <div id="available-options">
+                <button id="rock-button-user-1" class="option-button rock"></button>
+                <button id="paper-button-user-1" class="option-button paper"></button>
+                <button id="scissor-button-user-1" class="option-button scissor"></button>
+            </div>
+        </div>
+        <!-- /*****************************************[User-2-Controls]***********************************************/ -->
+        <button id="reset-button" class="option-button"></button>
+        <div id="user-2-controls">
+            <div id="selected-option-2" class="selected-option">
+                <button id="selected-button-user-2" class="option-button selected-button"></button>
+                <div id="user-score">
+                    <h1>Score<h2 id="user-2-score">0</h2>
+                    </h1>
+                </div>
+            </div>
+            <div id="available-options">
+                <button id="play-button-user-2">
+                    <h2>PLAY</h2>
+                </button>
+                <button id="end-play-button-user-2" class="play-button-user-2-c">
+                    <h2>END</h2>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- <footer>
+        <p>icons from <a href="https://www.flaticon.com/">flaticon</a></p>
+    </footer> -->
+
+</body>
+<script src="app.js"></script>
+
+</html>

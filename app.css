@@ -1,0 +1,231 @@
+* {
+    font-family: "Play";
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    user-select: none;
+}
+
+
+
+/*****************************************[Result]***********************************************/
+#result {
+    height: 15%;
+    width: 100%;
+    background-color: rgb(140, 140, 140);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ++++++++++++++[Winner]++++++++++++++ */
+#winner {
+    height: 50%;
+    width: 100%;
+    background-color: #edf2f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ++++++++++++++[Score]++++++++++++++ */
+#final-score {
+    height: 50%;
+    width: 100%;
+    background-color: #edf2f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#final-score h2 {
+    margin: 50px;
+}
+
+#winner h2 {
+    margin: 50px;
+}
+
+
+/*****************************************[UserControls]***********************************************/
+#user-controls {
+    height: 85%;
+    width: 100%;
+    background-color: rgb(147, 247, 154);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#reset-button {
+    background-image: url("/assets/refresh.png");
+    background-size: contain;
+    background-color: white;
+    border: 5px solid black;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+.rock {
+    background-image: url("/assets/rock.png");
+    background-color: #edf2f4;
+    background-size: contain;
+}
+
+.paper {
+    background-image: url("/assets/paper.png");
+    background-color: #edf2f4;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scissor {
+    background-image: url("/assets/scissor.png");
+    background-color: #edf2f4;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#end-play-button-user-2 {
+    background-color: rgb(248, 154, 154);
+}
+
+
+#play-button-user-2 {
+    height: 70px;
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 8px 8px rgb(0, 0, 0);
+    background-color: rgb(154, 248, 154);
+}
+
+#play-button-user-2:hover {
+    transform: scale(1.05);
+}
+
+.play-button-user-2-c {
+    height: 70px;
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 8px 8px rgb(0, 0, 0);
+    background-color: rgb(154, 248, 154);
+}
+
+.play-button-user-2-c:hover {
+    transform: scale(1.05);
+}
+
+/*****************************************[User-1-Controls]***********************************************/
+#user-1-controls {
+    height: 75%;
+    width: 35%;
+    background-color: #ef233c;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 8px rgb(0, 0, 0);
+}
+
+.selected-option {
+    height: 50%;
+    width: 100%;
+    background-color: #4f5270;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#available-options {
+    height: 50%;
+    width: 100%;
+    background-color: #4f5270;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.option-button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 3px rgb(0, 0, 0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.option-button:hover {
+    transform: scale(1.05);
+}
+
+#user-score {
+    height: 50%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+}
+
+.selected-button {
+    background-color: white;
+    background-image: url("/assets/questionMark.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+/*****************************************[User-2-Controls]***********************************************/
+#user-2-controls {
+    height: 75%;
+    width: 35%;
+    background-color: rgb(170, 119, 53);
+    border-radius: 15px;
+    box-shadow: 8px 8px rgb(0, 0, 0);
+}
+
+
+
+
+/*****************************************[Footer]***********************************************/
+/* footer {
+    height: 5%;
+    width: 100%;
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: rgb(173, 173, 173);
+} */
